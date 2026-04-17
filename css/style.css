@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+font-family: 'Inter', 'Geerlow', sans-serif;}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    flex: 1;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.633), rgba(0, 0, 0, 0.567)), /* TỐI HƠN */
+        url("https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg") no-repeat center center/cover;
+
+    filter: blur(px);
+    z-index: -1;
+}
+
+main {
+    flex: 1;
+}
+
+header h1 {
+    color: red;
+    background: linear-gradient(to bottom, #ff1f1f, #b00610);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header {
+    position:sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgba(16, 3, 3, 0.444);
+}
+
+nav a {
+    position: relative;
+    margin-left: 25px;
+    transition: 0.3s;
+    color: #ffffff;
+    text-decoration: none;
+}
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #e50914;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: white;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ===== ACTIVE MENU ===== */
+nav a.active {
+    color: #e50914;
+    font-weight: bold;
+}
+
+nav a.active::after {
+    width: 100%;
+    background: #e50914;
+    
+}
+
+/* Hiệu ứng glow nhẹ */
+nav a.active {
+    text-shadow: 0 0 8px rgba(229, 9, 20, 0.7);
+    
+}
+
+.search {
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.401);
+    text-align: center;
+    padding: 12px 10px;
+    margin: 20px auto;
+    width:500px;
+    border-radius: 100px;
+    background: rgba(0, 0, 0, 0.77);
+}
+
+.search input {
+    border: none;
+    background: transparent;
+    flex: 1;
+    font-size: 15px;
+    padding-left: 10PX;
+    color: white;
+    outline: none;
+}
+
+.search button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: large;
+    padding-right: 10px;
+    background: rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ .film-card {
+    width: 250px;
+    border: none;
+    padding: 10px 10px;
+    margin: 10px 20px;
+    transition: 0.4s;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(1, 0, 0, 0.61);
+    color: white;
+    animation: fadeIn 1s ease;
+ }
+
+ .movie-list {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+ }
+
+ .film-card:hover {
+    transform: scale(1.1);
+ }
+
+.film-card img {
+    width: 200px;
+    border-radius: 20px;
+    transition: 0.4s;
+    height: 300px;
+    object-fit: cover;
+}
+
+.film-card a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 1, 1, 0.834);
+    padding: 5px;
+    border-radius: 100px;
+    text-align: center;
+    display: block;
+    position: relative;
+    margin: 10px;
+    transition: 0.3s;
+    
+}
+
+.film-card a:hover {
+    background-color: rgb(242, 71, 71);
+}
+
+/* giới thiệu */
+.about {
+    background: rgba(0, 0, 0, 0.53);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    margin: 150px auto;
+    padding: 40px;
+    max-width: 800px;
+
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+    animation: fadeIn 1s ease;
+}
+
+.about h2 {
+    color: #ff1f1f;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.about p {
+    margin-bottom: 40px;
+}
+
+.about ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about li {
+    border: 1px solid rgba(255, 255, 255, 0.052);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    width: 10;
+    background: rgba(255, 255, 255, 0.052);
+}
+
+.about li:hover {
+    transform: scale(1.02);
+    background: red;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    background: black;
+    color: rgba(255, 255, 255, 0.916);
+    margin-top: 50px;
+    padding: 15px;
+    font-size: smaller;
+}
+
+/* phim */
+.movie-detail {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 80px;
+    align-items: center;
+    animation: fadeInUp 1s ease-out;
+    background: linear-gradient(rgba(0, 0, 0, 0.618));
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.movie-detail img {
+    width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0);
+    margin: 20px 20px;
+}
+
+
+
+.info h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #ff0000, #500306);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+.info p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: #b3b3b3;
+}
+
+.info p strong {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.review {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.review h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    position: relative;
+    color: white;
+}
+
+.review h2::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 137px;
+    height: 4px;
+    background: #e50914;
+    border-radius: 2px;
+}
+
+#reviewForm input, 
+#reviewForm textarea {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+#reviewForm input:focus, 
+#reviewForm textarea:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #e50914;
+    outline: none;
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.2);
+}
+
+#reviewForm button {
+    background: #e50914;
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Hiệu ứng nảy nhẹ */
+}
+
+#reviewForm button:hover {
+    background: #f40612;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(229, 9, 20, 0.4);
+}
+
+.review1 {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    animation: fadeIn 1s ease;
+}
+
+.review1 h2 {
+    color: white;
+    text-align: center;
+    margin: 100px 340px;
+}
+
+
+
+.review1 a {
+    text-decoration: none;
+    color: white;
+    background: red;
+    border-radius: 100px;
+    padding: 10px 20px;
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.movie-detail {
+    display: block;
+}
+
+/* ẢNH + INFO NẰM NGANG */
+.top-detail {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+/* VIDEO NẰM DƯỚI */
+.trailer {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.trailer iframe {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    border-radius: 15px;
+}

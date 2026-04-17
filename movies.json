@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Avengers: Endgame",
+    "genre": ["Siêu Anh Hùng", "Hành Động", "Khoa học viễn tưởng", "Phiêu Lưu"],
+    "rating": 8.4,
+    "year": 2019,
+    "image": "images/1. Avenger Endgame.jpg",
+    "trailer": "TcMBFSGVi1c",
+    "description": "Sau cú búng tay hủy diệt của Thanos khiến một nửa vũ trụ tan biến, các Avengers còn sống sót phải đối mặt với mất mát nặng nề và sự tuyệt vọng. Tuy nhiên, họ không bỏ cuộc. Với hy vọng cuối cùng, nhóm siêu anh hùng tập hợp lại để thực hiện một kế hoạch táo bạo nhằm đảo ngược thảm họa. Bộ phim là hành trình đầy cảm xúc, nơi tình bạn, sự hy sinh và lòng dũng cảm được đẩy lên đỉnh điểm, khép lại một chương huy hoàng của vũ trụ Marvel."
+  },
+  {
+    "id": 2,
+    "title": "Spider-Man",
+    "genre": ["Siêu Anh Hùng", "Hành Động", "Khoa học viễn tưởng", "Phiêu Lưu"],
+    "rating": 8.1,
+    "year": 2021,
+    "image": "images/2. Spider-Man No Way Home.jpg",
+    "trailer": "JfVOs4VSpmA",
+    "description": "Khi danh tính Spider-Man của Peter Parker bị lộ, cuộc sống của cậu hoàn toàn đảo lộn..."
+  },
+  {
+    "id": 3,
+    "title": "The Batman",
+    "genre": ["Siêu Anh Hùng", "Hành Động", "Tội Phạm", "Giật Gân"],
+    "rating": 7.8,
+    "year": 2022,
+    "image": "images/3. The Batman.jpg",
+    "trailer": "mqqft2x_Aa4",
+    "description": "Trong những năm đầu hoạt động tại Gotham, Batman phải đối mặt với một kẻ sát nhân..."
+  },
+  {
+    "id": 4,
+    "title": "Interstellar",
+    "genre": ["Khoa học viễn tưởng", "Phiêu Lưu", "Tâm Lý"],
+    "rating": 8.7,
+    "year": 2014,
+    "image": "images/4. Interstellar.jpg",
+    "trailer": "zSWdZVtXT7E",
+    "description": "Khi Trái Đất dần trở nên không thể sinh sống..."
+  },
+  {
+    "id": 5,
+    "title": "Inception",
+    "genre": ["Khoa học viễn tưởng", "Hành Động", "Giật Gân"],
+    "rating": 8.8,
+    "year": 2010,
+    "image": "images/5. Inception.jpg",
+    "trailer": "YoHD9XEInc0",
+    "description": "Dom Cobb là một kẻ chuyên đánh cắp bí mật trong giấc mơ..."
+  },
+  {
+    "id": 6,
+    "title": "The Matrix",
+    "genre": ["Hành Động", "Khoa học viễn tưởng"],
+    "rating": 8.7,
+    "year": 1999,
+    "image": "images/6. The Matrix.jpg",
+    "trailer": "vKQi3bBA1y8",
+    "description": "Neo, một lập trình viên bình thường, phát hiện thế giới anh đang sống chỉ là mô phỏng..."
+  },
+  {
+    "id": 7,
+    "title": "Home Alone",
+    "genre": ["Hài kịch", "Gia Đình"],
+    "rating": 7.8,
+    "year": 1990,
+    "image": "images/7. Home Alone.jpg",
+    "trailer": "jEDaVHmw7r4",
+    "description": "Cậu bé Kevin vô tình bị bỏ lại một mình ở nhà trong dịp Giáng sinh..."
+  },
+  {
+    "id": 8,
+    "title": "Mr. Bean's Holiday",
+    "genre": ["Hài Kịch", "Gia Đình"],
+    "rating": 6.4,
+    "year": 2007,
+    "image": "images/8. Mr. Bean's Holiday.jpg",
+    "trailer": "hSxLUd8aly4",
+    "description": "Mr. Bean trúng chuyến du lịch đến Pháp nhưng mọi thứ trở thành chuỗi tình huống dở khóc dở cười..."
+  },
+  {
+    "id": 9,
+    "title": "Titanic",
+    "genre": ["Thảm Họa", "Lãng Mạn", "Sử Thi", "Chính Kịch"],
+    "rating": 8.0,
+    "year": 1997,
+    "image": "images/9. Titanic.jpg",
+    "trailer": "kVrqfYjkTdQ",
+    "description": "Trên con tàu Titanic huyền thoại, Jack và Rose tìm thấy tình yêu..."
+  },
+  {
+    "id": 10,
+    "title": "The Fault in Our Stars",
+    "genre": ["Lãng Mạn", "Chính Kịch", "Văn học tuổi teen"],
+    "rating": 7.6,
+    "year": 2014,
+    "image": "images/10. The Fault in Our Stars.jpg",
+    "trailer": "9ItBvH5J6ss",
+    "description": "Hazel và Gus – hai bệnh nhân ung thư – gặp nhau và trải qua tình yêu đầy ý nghĩa..."
+  },
+  {
+    "id": 11,
+    "title": "Your Name",
+    "genre": ["Lãng Mạn", "Kỳ Ảo", "Chính Kịch", "Tâm Lý Đời Thường"],
+    "rating": 8.4,
+    "year": 2016,
+    "image": "images/11. Your Name.jpg",
+    "trailer": "xU47nhruN-Q",
+    "description": "Hai người xa lạ Mitsuha và Taki bất ngờ hoán đổi cơ thể cho nhau..."
+  },
+  {
+    "id": 12,
+    "title": "Spirited Away",
+    "genre": ["Phiêu Lưu", "Kỳ Ảo", "Tâm Lý"],
+    "rating": 8.6,
+    "year": 2001,
+    "image": "images/12. Spirited Away.jpg",
+    "trailer": "ByXuk9QqQkk",
+    "description": "Cô bé Chihiro lạc vào thế giới linh hồn kỳ bí..."
+  },
+  {
+    "id": 13,
+    "title": "Bố Già",
+    "genre": ["Tâm Lý", "Gia Đình", "Hài Kịch", "Chính Kịch"],
+    "rating": 6.6,
+    "year": 2021,
+    "image": "images/13. Bố Già.jpg",
+    "trailer": "jluSu8Rw6YE",
+    "description": "Phim kể về cuộc sống của một người cha lao động nghèo..."
+  },
+  {
+    "id": 14,
+    "title": "Hai Phượng",
+    "genre": ["Hành Động", "Tâm Lý", "Giật Gân"],
+    "rating": 6.3,
+    "year": 2019,
+    "image": "images/14. Hai Phượng.jpg",
+    "trailer": "https://www.youtube.com/embed/zLAvZJsbE1M?si=VXs_0kw_d17TnO0g",
+    "description": "Khi con gái bị bắt cóc, Hai Phượng dấn thân vào hành trình nguy hiểm..."
+  }
+]
